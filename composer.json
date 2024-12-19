@@ -17,7 +17,7 @@
   ],
   "require": {
     "php": "^8.1",
-    "livewire/livewire": "^2.12",
+    "livewire/livewire": "3.x",
     "spatie/laravel-package-tools": "^1.14.0"
   },
   "require-dev": {

@@ -77,7 +77,7 @@
       <data directive="@includeUnless" injection="true" prefix="&lt;?php echo $__env-&gt;renderUnless(" suffix=", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path'])); ?&gt;" />
       <data directive="@includeWhen" injection="true" prefix="&lt;?php echo $__env-&gt;renderWhen(" suffix=", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path'])); ?&gt;" />
       <data directive="@isset" injection="true" prefix="&lt;?php if(isset(" suffix=")): ?&gt;" />
-      <data directive="@js" injection="true" prefix="&lt;?php json_encode(" suffix="); ?&gt;" />
+      <data directive="@js" injection="true" prefix="&lt;?php _bladeDirective(" suffix="); ?&gt;" />
       <data directive="@json" injection="true" prefix="&lt;?php echo json_encode(" suffix=") ?&gt;" />
       <data directive="@lang" injection="true" prefix="&lt;?php echo app('translator')-&gt;get(" suffix="); ?&gt;" />
       <data directive="@livewire" injection="true" prefix="&lt;?php \Livewire\Livewire::mount(" suffix="); ?&gt;" />
@@ -105,12 +105,13 @@
       <data directive="@slot" injection="true" prefix="&lt;?php $__env-&gt;slot(" suffix="); ?&gt;" />
       <data directive="@stack" injection="true" prefix="&lt;?php echo $__env-&gt;yieldPushContent(" suffix="); ?&gt;" />
       <data directive="@stop" />
+      <data directive="@style" injection="true" prefix="class=&quot;&lt;?php echo \Illuminate\Support\Arr::toCssStyles(" suffix=")?&gt;&quot;" />
       <data directive="@switch" injection="true" prefix="&lt;?php switch(" suffix="): ?&gt;" />
       <data directive="@this" />
       <data directive="@unless" injection="true" prefix="&lt;?php if (! (" suffix=")): ?&gt;" />
       <data directive="@unset" injection="true" prefix="&lt;?php unset(" suffix="); ?&gt;" />
       <data directive="@verbatim" />
-      <data directive="@vite" injection="true" prefix="&lt;?php echo app('\\Illuminate\\Foundation\\Vite')(" suffix="); ?&gt;" />
+      <data directive="@vite" injection="true" prefix="&lt;?php echo vite_func(" suffix="); ?&gt;" />
       <data directive="@viteReactRefresh" />
       <data directive="@vitereactrefresh" />
       <data directive="@while" injection="true" prefix="&lt;?php while(" suffix="): ?&gt;" />
